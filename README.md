@@ -1,5 +1,5 @@
 # Among Us Code Hider
-This application consists of 2 programs, one is a Unity Assets Bundle Extractor mod installer that patches Among Us v2020.12.9's assets so that instead of seeing a code, you'll see <REDACTED>. The other program will start a web server that will show the room code. This second program uses the same code that Crewlink uses to discover the current game state.
+This application consists of 2 programs, one is a Unity Assets Bundle Extractor mod installer that patches Among Us v2020.12.9's assets so that instead of seeing a code, you'll see \<REDACTED\>. The other program will start a web server that will show the room code. This second program uses the same code that Crewlink uses to discover the current game state.
 
 ## Requirements
 * Among Us (duh!)
