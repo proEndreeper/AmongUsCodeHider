@@ -12,7 +12,7 @@ This application consists of 2 programs, one is a Unity Assets Bundle Extractor 
 3. Run AmongUsCodeHider.exe (you may need to select the path to Among Us's root directory)
 	- To find Among Us's root directory, you can right click on Among Us in your Steam library and click on **Manage -> Browse local files**
 4. Copy .env.example to .env and modify the port to an unused port, by default it will be set to 8080.
-5. Run AmongUsCodeViewer.exe to launch a web server to display your room code.
+5. Run AmongUsCodeViewer.exe to launch a web server to display your room code. Your anti-virus may pop up a warning, this is because AmongUsCodeViewer uses Direct Memory Access to read the state of Among Us, in the same fashion that CrewLink does.
 6. Launch a browser and go to the url listed in the console of AmongUsCodeViewer
 
 ## Development
