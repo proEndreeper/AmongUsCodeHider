@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Among Us Code Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img class="center-align responsive-img" style="margin: 0 25%;max-width:50%; filter: hue-rotate(-30deg);" src="/banner.png"/>
+        <h1 class="center-align header">Among Us Room Code</h1>
+        <h2 id="lobbyCode" class="center-align"></h2>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+        var socket = io();
+        socket.on('game_state',(data)=>{
+            var code = "Game Is Not Running!";
+            if(data.gameRunning)
+            {
+                code = data.gameState.lobbyCode;
+                if(code == "MENU")
+                {
+                    code = "In Main Menu";
+                }
+            }
+            $("#lobbyCode").text(code);
+        });
+    </script>
+</body>
+</html>
