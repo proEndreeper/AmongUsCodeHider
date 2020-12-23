@@ -1,6 +1,0 @@
-[submodule "among-us-code-viewer/src/CrewLink"]
-	path = among-us-code-viewer/src/CrewLink
-	url = https://github.com/ottomated/CrewLink.git
-[submodule "among-us-code-viewer/src/CrewLink-server"]
-	path = among-us-code-viewer/src/CrewLink-server
-	url = https://github.com/ottomated/CrewLink-server.git
